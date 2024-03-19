@@ -68,7 +68,7 @@ if USER_MODE:
 else:
 
 
-   async def start(sel):
+    async def start(sel):
            await super().start()
            self.id = sel.me.id
            self.name = sel.me.first_name + " " + (sel.me.last_name or "")

@@ -25,7 +25,7 @@ class App(Client):
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             lang_code="en",
-            string_session=config.TOKEN,
+            session_string=config.TOKEN,
             plugins=dict(root="Assistant.modules"),
             in_memory=True,
             parse_mode=enums.ParseMode.DEFAULT,

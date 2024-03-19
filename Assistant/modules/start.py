@@ -13,7 +13,7 @@ async def start_command(c: Abishnoi, message: Message):
 
     await add_served_user(message.from_user.id)
     await message.reply_text(
-        f"ʜᴇʟʟᴏ .\n\nᴀssɪsᴛᴀɴᴛ ᴏғ [विवेक कुमार](t.me/vivekkumar07089\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
+        f"ʜᴇʟʟᴏ {message.from_user.mention} ɪ ᴀᴍ ᴀssɪsᴛᴀɴᴛ ᴏғ [विवेक कुमार](t.me/vivekkumar07089 ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
         
     )
     return

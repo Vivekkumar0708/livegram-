@@ -12,9 +12,8 @@ async def start_command(c: Abishnoi, message: Message):
         return
 
     await add_served_user(message.from_user.id)
-    await message.reply_photo(
-        "https://telegra.ph/file/8600403902c26c406ad80.jpg",
-        caption=f"ʜᴇʟʟᴏ {message.from_user.mention}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ [विवेक कुमार](t.me/vivekkumar07089)\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
+    await message.reply_text(
+        f"[https://telegra.ph/file/8600403902c26c406ad80.jpg](h) ʜᴇʟʟᴏ {message.from_user.mention}.\n\nᴀssɪsᴛᴀɴᴛ ᴏғ [विवेक कुमार](t.me/vivekkumar07089)\nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
         
     )
     return

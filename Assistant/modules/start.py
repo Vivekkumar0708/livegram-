@@ -13,7 +13,7 @@ async def start_command(c: Abishnoi, message: Message):
 
     await add_served_user(message.from_user.id)
     await message.reply_text(
-        f"[https://telegra.ph/file/8600403902c26c406ad80.jpg](h) ʜᴇʟʟᴏ .\n\nᴀssɪsᴛᴀɴᴛ ᴏғ \nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
+        f"[Vivek](https://telegra.ph/file/8600403902c26c406ad80.jpg) ʜᴇʟʟᴏ .\n\nᴀssɪsᴛᴀɴᴛ ᴏғ \nғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ, ᴅᴏɴ'ᴛ ᴅᴍ",
         
     )
     return

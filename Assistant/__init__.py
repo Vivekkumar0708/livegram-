@@ -16,20 +16,34 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 SUDO_USERS = config.SUDO_USER
+USER_MODE = config.USER_MODE
 
-
-class App(Client):
-    def __init__(self):
-        super().__init__(
-            name="Assistant",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            lang_code="en",
-            session_string=config.TOKEN,
-            plugins=dict(root="Assistant.modules"),
+if USER_MODE:
+   class App(Client):
+       def __init__(self):
+           super().__init__(
+               name="Assistant",
+               api_id=config.API_ID,
+               api_hash=config.API_HASH,
+               lang_code="en",
+               session_string=config.SESSION,
+               plugins=dict(root="Assistant.modules"),
             in_memory=True,
-            parse_mode=enums.ParseMode.DEFAULT,
-        )
+               parse_mode=enums.ParseMode.DEFAULT,
+           )
+else:
+   class App(Client):
+       def __init__(self):
+           super().__init__(
+               name="Assistant",
+               api_id=config.API_ID,
+               api_hash=config.API_HASH,
+               lang_code="en",
+               session_string=config.SESSION,
+               plugins=dict(root="Assistant.modules"),
+            in_memory=True,
+               parse_mode=enums.ParseMode.DEFAULT,
+           )
 
     async def start(self):
         await super().start()

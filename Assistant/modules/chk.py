@@ -26,7 +26,7 @@ def send_reaction(chat_id, message_id, emoji):
 def handle_message(client, message: Message):
     # Get the chat ID and message ID directly from the message object
     chat_id = message.chat.id
-    message_id = message.message_id
+    message_id = message.message_id.message_id
     # Select a random emoji
     do_emoji = random.choice(["👍", "👎", "❤", "🔥", "🥰"])
     # Call the function to send the message reaction

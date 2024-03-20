@@ -5,8 +5,6 @@ from Assistant import Abishnoi as app
 from config import TOKEN
 from pyrogram.types import Message
 
-
-
 # Define the URL to send the message reaction
 url = f"https://api.telegram.org/bot{TOKEN}/setMessageReaction"
 

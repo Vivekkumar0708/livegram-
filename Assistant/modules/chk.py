@@ -2,9 +2,10 @@ import requests
 from pyrogram import Client, filters
 import random
 from Assistant import Abishnoi as app
+from config import TOKEN
 
 # Define the URL to send the message reaction
-url = "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setMessageReaction"
+url = f"https://api.telegram.org/bot{TOKEN}/setMessageReaction"
 
 # Define the function to send the message reaction
 def send_reaction(chat_id, message_id, emoji):

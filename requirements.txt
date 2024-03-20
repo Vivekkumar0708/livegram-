@@ -1,5 +1,6 @@
 pyrogram
 tgcrypto
+requests
 python-dotenv
 pymongo==4.3.3
 python-dotenv

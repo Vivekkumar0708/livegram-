@@ -30,4 +30,3 @@ def handle_message(client, message):
     do_emoji = random.choice(["👍", "👎", "❤", "🔥", "🥰"])
     # Call the function to send the message reaction
     send_reaction(chat_id, message_id, do_emoji)
-

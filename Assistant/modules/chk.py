@@ -3,6 +3,9 @@ from pyrogram import Client, filters
 import random
 from Assistant import Abishnoi as app
 from config import TOKEN
+from pyrogram.types import Message
+
+
 
 # Define the URL to send the message reaction
 url = f"https://api.telegram.org/bot{TOKEN}/setMessageReaction"
@@ -22,8 +25,8 @@ def send_reaction(chat_id, message_id, emoji):
 
 # Define your handler
 @app.on_message(filters.private)
-def handle_message(client, message):
-    # Get the chat ID and message ID
+def handle_message(client, message: Message):
+    # Get the chat ID and message ID directly from the message object
     chat_id = message.chat.id
     message_id = message.message_id
     # Select a random emoji
